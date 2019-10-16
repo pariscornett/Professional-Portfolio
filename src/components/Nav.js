@@ -4,17 +4,14 @@ import { Layout, Header, Navigation, Drawer, Content } from "react-mdl"
 
 const styles={
     layout: {
-        backgroundColor: "black",
-        position: "relative",
-
-        
+        top:0
     }
 }
 function Nav() {
     return (
         <div className="demo-big-content">
-        <Layout >
-            <Header title="Paris Cornett" style={styles.layout} scroll> 
+        <Layout  style={styles.layout}>
+            <Header title="Paris Cornett" scroll> 
             </Header>
             <Drawer title="Menu">
                 <Navigation >

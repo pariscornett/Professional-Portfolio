@@ -11,9 +11,8 @@ import Resume from "./components/Resume";
 function App() {
   return (
     <div className="App">
-      <Nav />
       <Router>
-      
+      <Nav />
           <Switch>
             <Route
               exact path="/" component={Home}
