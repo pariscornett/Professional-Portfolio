@@ -1,5 +1,4 @@
-import React from 'react';
-import './App.css';
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -7,10 +6,11 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
+import Foot from "./components/Foot";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
       <Nav />
           <Switch>
@@ -33,6 +33,7 @@ function App() {
               exact path="/resume" component={Resume}
             />
           </Switch>
+        <Foot />
       </Router>
     </div>
   );
