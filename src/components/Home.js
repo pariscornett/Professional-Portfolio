@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import { Grid, Cell } from "react-mdl"
-import avatar from "../assets/myAvatar.png"
+import React, { Component } from "react";
+import { Grid, Cell } from "react-mdl";
+import avatar from "../assets/myAvatar.png";
+
 
 const styles={
     layout: {
@@ -20,7 +21,7 @@ const styles={
         borderRadius: 200
     },
     banner: {
-        backgroundColor: "#f7f7f7",
+        backgroundColor: "#ffffff",
         opacity: "0.8",
         width: "75%",
         margin: "auto",
@@ -39,6 +40,7 @@ const styles={
         color: "black"
     }
 }
+
 
 class Home extends Component {
     render() {
@@ -66,7 +68,7 @@ class Home extends Component {
                             rel="noopener noreferrer"
                             style={styles.socialIcons}
                             >
-                                <i className="fa fa-github" aria-hidden="true" /> 
+                                <i className="fa fa-github"></i>
                             </a>
                             <a 
                             href="https://github.com/pariscornett" 

@@ -15,7 +15,7 @@ function Foot() {
     return (
         <div>
         <Footer size="mini" style={styles.design}>
-            <FooterSection type="left" logo="Title">
+            <FooterSection type="middle" logo="Copyright &copy; 2019 | Paris Cornett">
                 <FooterLinkList>
                     <a href="#">Help</a>
                     <a href="#">Privacy & Terms</a>
