@@ -33,8 +33,8 @@ function App() {
               exact path="/resume" component={Resume}
             />
           </Switch>
-        <Foot />
       </Router>
+      <Foot />
     </div>
   );
 }

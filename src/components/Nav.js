@@ -29,7 +29,7 @@ function Nav() {
             <Drawer>
                 <Navigation >
                     <a style={styles.drawerDesign} href="/home">Home</a>
-                    <a style={styles.drawerDesign} href="/about">About</a>
+                    <a style={styles.drawerDesign} href="https://google.com">About</a>
                     <a style={styles.drawerDesign} href="/contact">Contact</a>
                     <a style={styles.drawerDesign} href="/projects">Projects</a>
                     <a style={styles.drawerDesign} href="/resume">Resume</a>

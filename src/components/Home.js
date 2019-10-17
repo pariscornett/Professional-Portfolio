@@ -2,16 +2,15 @@ import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import avatar from "../assets/myAvatar.png";
 
-
 const styles={
     layout: {
-        top: 0,
+        top: 0
     },
     design: {
         background: "#7f7fd5",  /* fallback for old browsers */
         background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",  /* Chrome 10-25, Safari 5.1-6 */
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+        height: "635px",
         textAlign: "center"    
     },
     avatar: {
@@ -63,15 +62,15 @@ class Home extends Component {
 
                             <div style={styles.social}>
                             <a 
-                            href="https://github.com/pariscornett" 
+                            href="https://google.com" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             style={styles.socialIcons}
                             >
-                                <i className="fa fa-github"></i>
+                                <i className="fab fa-js-square" aria-hidden="true" />
                             </a>
                             <a 
-                            href="https://github.com/pariscornett" 
+                            href="https://github.com/pariscornett/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             style={styles.socialIcons}
