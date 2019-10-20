@@ -7,8 +7,8 @@ const styles={
         top: 0
     },
     design: {
-        background: "#7f7fd5",  /* fallback for old browsers */
-        background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",  /* Chrome 10-25, Safari 5.1-6 */
+        //background: "#7f7fd5",  /* fallback for old browsers */
+        //background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",  /* Chrome 10-25, Safari 5.1-6 */
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         height: "635px",
         textAlign: "center"    
@@ -67,7 +67,7 @@ class Home extends Component {
                             rel="noopener noreferrer"
                             style={styles.socialIcons}
                             >
-                                <i className="fab fa-js-square" aria-hidden="true" />
+                            
                             </a>
                             <a 
                             href="https://github.com/pariscornett/" 

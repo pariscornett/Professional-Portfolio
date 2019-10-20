@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell } from "react-mdl";
+import ProjectCard from "./ProjectCard";
+
 
 const styles = {
     layout: {
@@ -9,33 +11,47 @@ const styles = {
     }
 }
 
-
-
 class Projects extends Component {
     constructor(props) {
         super(props)
-        this.state = { activeTab: 2 };
+        this.state = { 
+            activeTab: 0,
+            tabName: ""
+        };
     }
 
-    
+    handleChange = (tabId) => {
+        this.setState({
+            activeTab: tabId,
+            tabName: this.name,
+        })
+    }
+
     toggleCategories = () => {
-        const {activeTab} = this.state;
+        const {activeTab, tabName} = this.state;
         if(activeTab===0) {
             return(
                 <div>
-                    <h6>React projects</h6>
+                    <ProjectCard 
+                    activeTab={activeTab}
+                    tabName={tabName}
+                    />
                 </div>
             )
         } else if(activeTab===1) {
             return(
                 <div>
-                    <h6>Vanilla JavaScript projects</h6>
+                    <ProjectCard 
+                    activeTab={activeTab}
+                    />
                 </div>
             )
         } else if(activeTab===2) {
             return(
                 <div>
-                    <h6>MongoDB projects</h6>
+                    <ProjectCard 
+                    activeTab={activeTab}
+                    />
                 </div>
             )
         }
@@ -47,8 +63,8 @@ class Projects extends Component {
             <div className="demo-tabs" style={styles.layout}>
                 <Grid>
                     <Cell col={12}>
-                        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                            <Tab>React</Tab>
+                        <Tabs activeTab={this.state.activeTab} onChange={this.handleChange} ripple>
+                            <Tab name="React">React</Tab>
                             <Tab>JavaScript</Tab>
                             <Tab>MongoDB</Tab>
                         </Tabs>
