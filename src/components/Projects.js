@@ -54,6 +54,13 @@ class Projects extends Component {
                     />
                 </div>
             )
+        } else if(activeTab===3) {
+           return(
+                <div>
+                    <ProjectCard
+                    activeTab={activeTab} />
+                </div>
+           )
         }
     }
 
@@ -67,6 +74,7 @@ class Projects extends Component {
                             <Tab name="React">React</Tab>
                             <Tab>JavaScript</Tab>
                             <Tab>MongoDB</Tab>
+                            <Tab>MySQL</Tab>
                         </Tabs>
                         <section>
                             <div className="content">
