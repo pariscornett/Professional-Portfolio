@@ -29,9 +29,9 @@ class Projects extends Component {
         const {activeTab} = this.state;
         if(activeTab===0) {
             return(
-                <div>
-                <div>
-                    <Card shadow={0} style={{width: '512px', margin: '2em', float: 'left'}}>
+                <div style={{display: "flex"}}>
+         
+                    <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>Styls</CardTitle>
                         <CardText>
                             {this.props.activeTab}
@@ -44,27 +44,11 @@ class Projects extends Component {
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://styls.herokuapp.com/" />
                         </CardMenu>
                     </Card>  
-                </div>
-                  <div>
-                  <Card shadow={0} style={{width: '512px', margin: '2em', float: 'left'}}>
-                      <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>Daria Memory Game</CardTitle>
-                      <CardText>
-                          {this.props.activeTab}
-                      </CardText>
-                      <CardActions border>
-                          <Button colored href="https://github.com/pariscornett/Clicky-Game" target="_blank">Github</Button>
-                          <Button colored href="https://pariscornett.github.io/Clicky-Game/" target="_blank">Live Demo</Button>
-                      </CardActions>
-                      <CardMenu style={{color: '#fff'}}>
-                          <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://pariscornett.github.io/Clicky-Game/" />
-                      </CardMenu>
-                  </Card>  
-              </div>
               </div>
             )
         } else if(activeTab===1) {
             return(
-                <div>
+                <div style={{display: "flex"}}>
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>That's Trashy</CardTitle>
                         <CardText>
@@ -82,7 +66,7 @@ class Projects extends Component {
             )
         } else if(activeTab===2) {
             return(
-                <div>
+                <div style={{display: "flex"}}>
                       <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>Styls</CardTitle>
                         <CardText>
@@ -100,7 +84,7 @@ class Projects extends Component {
             )
         } else if(activeTab===3) {
            return(
-                <div>
+                <div style={{display: "flex"}}>
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>Hike It!</CardTitle>
                         <CardText>
