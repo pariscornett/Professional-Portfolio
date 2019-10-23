@@ -32,7 +32,7 @@ function Nav() {
                     <a style={styles.drawerDesign} href="/about">About</a>
                     <a style={styles.drawerDesign} href="/contact">Contact</a>
                     <a style={styles.drawerDesign} href="/projects">Projects</a>
-                    <a style={styles.drawerDesign} href="/resume">Resume</a>
+                    <a style={styles.drawerDesign} href="https://docs.google.com/document/d/1_MROrSzStrNRsb_F1XiqlatYC_y53_ugd8fDzfjcf74/edit?usp=sharing">Resume</a>
                 </Navigation>
             </Drawer>
             <Content>
