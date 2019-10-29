@@ -29,10 +29,9 @@ function Nav() {
             <Drawer>
                 <Navigation >
                     <a style={styles.drawerDesign} href="/home">Home</a>
-                    <a style={styles.drawerDesign} href="/about">About</a>
                     <a style={styles.drawerDesign} href="/contact">Contact</a>
                     <a style={styles.drawerDesign} href="/projects">Projects</a>
-                    <a style={styles.drawerDesign} href="https://docs.google.com/document/d/1_MROrSzStrNRsb_F1XiqlatYC_y53_ugd8fDzfjcf74/edit?usp=sharing">Resume</a>
+                    <a style={styles.drawerDesign} href="https://docs.google.com/document/d/1Anz4AYTMIudpU6FfYRQ5N0gsxJqNoCBnEPGCSpcP8Js/edit?usp=sharing" rel="noopener noreferrer" target="_blank">Resume</a>
                 </Navigation>
             </Drawer>
             <Content>

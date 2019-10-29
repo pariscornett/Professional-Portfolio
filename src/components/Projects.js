@@ -37,8 +37,8 @@ class Projects extends Component {
                             {this.props.activeTab}
                         </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/pariscornett/Styls" target="_blank">Github</Button>
-                            <Button colored href="https://styls.herokuapp.com/" target="_blank">Live Demo</Button>
+                            <Button colored href="https://github.com/pariscornett/Styls"  rel="noopener noreferrer" target="_blank">Github</Button>
+                            <Button colored href="https://styls.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://styls.herokuapp.com/" />
@@ -55,8 +55,8 @@ class Projects extends Component {
                             {this.props.activeTab}
                         </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/pariscornett/Thats-Trashy">Github</Button>
-                            <Button colored href="https://pariscornett.github.io/Thats-Trashy/">Live Demo</Button>
+                            <Button colored href="https://github.com/pariscornett/Thats-Trashy" rel="noopener noreferrer" target="_blank">Github</Button>
+                            <Button colored href="https://pariscornett.github.io/Thats-Trashy/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://pariscornett.github.io/Thats-Trashy/" />
@@ -73,8 +73,8 @@ class Projects extends Component {
                             {this.props.activeTab}
                         </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/pariscornett/Styls" target="_blank">Github</Button>
-                            <Button colored href="https://styls.herokuapp.com/" target="_blank">Live Demo</Button>
+                            <Button colored href="https://github.com/pariscornett/Styls" rel="noopener noreferrer" target="_blank">Github</Button>
+                            <Button colored href="https://styls.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://styls.herokuapp.com/" />
@@ -91,8 +91,8 @@ class Projects extends Component {
                             {this.props.activeTab}
                         </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/pariscornett/Hike-It">Github</Button>
-                            <Button colored href="https://shielded-springs-34062.herokuapp.com/">Live Demo</Button>
+                            <Button colored href="https://github.com/pariscornett/Hike-It" rel="noopener noreferrer" target="_blank">Github</Button>
+                            <Button colored href="https://shielded-springs-34062.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://shielded-springs-34062.herokuapp.com/" />

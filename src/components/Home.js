@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import avatar from "../assets/myAvatar.png";
+import About from "./About";
 
 const styles={
     layout: {
@@ -10,7 +11,7 @@ const styles={
         //background: "#7f7fd5",  /* fallback for old browsers */
         //background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",  /* Chrome 10-25, Safari 5.1-6 */
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        height: "635px",
+        height: "500px",
         textAlign: "center"    
     },
     avatar: {
@@ -20,8 +21,9 @@ const styles={
         borderRadius: 200
     },
     banner: {
-        backgroundColor: "#ffffff",
-        opacity: "0.8",
+        position:"relative",
+        top: "100px",
+        color: "#ffffff",
         width: "75%",
         margin: "auto",
         borderRadius: 15,
@@ -34,9 +36,6 @@ const styles={
         margin: "auto",
         fontSize: "5em",
        
-    },
-    socialIcons: {
-        color: "black"
     }
 }
 
@@ -53,35 +52,9 @@ class Home extends Component {
                         style={styles.avatar}
                         />
 
-                        <div style={styles.banner}>
-                            <h1>Full Stack Developer</h1>
-
-                            <hr />
-
-                            <h4>MongoDB | Express | React | NodeJS | Python | HTML | CSS | Bootstrap | Materialize | npm </h4>
-
-                            <div style={styles.social}>
-                            <a 
-                            href="https://google.com" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            style={styles.socialIcons}
-                            >
-                            
-                            </a>
-                            <a 
-                            href="https://github.com/pariscornett/" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            style={styles.socialIcons}
-                            >
-                                <i className="fa fa-linkedin" aria-hidden="true" /> 
-                            </a>
-                        </div>
-                        </div>
-
-                    
+                        <h3 style={styles.banner}>I'm Paris, a problem-solver and programmer.</h3>
                     </Cell>
+                    <About />
                 </Grid>
             </div>
         )
