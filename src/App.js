@@ -3,15 +3,20 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
-import Projects from "./components/Projects";
+//import Projects from "./components/Projects";
+import About from "./components/About";
+import "./App.css";
+
 
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Router>
       <Nav />
-          <Switch>
+      <Home />
+      <About />
+          {/* <Switch>
             <Route
               exact path="/" component={Home}
             />
@@ -21,10 +26,7 @@ function App() {
             <Route
               exact path="/contact" component={Contact}
             />
-            <Route
-              exact path="/projects" component={Projects}
-            />
-          </Switch>
+          </Switch> */}
       </Router>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl"
-
+import { Spring } from "react-spring/renderprops";
 
 const styles={
     layout: {
@@ -22,23 +22,32 @@ const styles={
 }
 function Nav() {
     return (
-        <div className="demo-big-content">
-        <Layout  style={styles.layout}>
-            <Header title="Paris Cornett Development" style={styles.design} scroll> 
-            </Header>
-            <Drawer>
-                <Navigation >
-                    <a style={styles.drawerDesign} href="/home">Home</a>
-                    <a style={styles.drawerDesign} href="/contact">Contact</a>
-                    <a style={styles.drawerDesign} href="/projects">Projects</a>
-                    <a style={styles.drawerDesign} href="https://docs.google.com/document/d/1Anz4AYTMIudpU6FfYRQ5N0gsxJqNoCBnEPGCSpcP8Js/edit?usp=sharing" rel="noopener noreferrer" target="_blank">Resume</a>
-                </Navigation>
-            </Drawer>
-            <Content>
-                <div className="page-content" />
-            </Content>
-        </Layout>
-    </div>
+        <Spring
+            from={{opacity: 0, marginTop:-500}}
+            to={{opacity:1, marginTop:0}}
+        >
+            {props => (
+                <div style={props}>
+                    <div className="demo-big-content">
+                        <Layout  style={styles.layout}>
+                            <Header title="Paris Cornett Development" style={styles.design} scroll> 
+                            </Header>
+                            <Drawer>
+                                <Navigation >
+                                    <a style={styles.drawerDesign} href="/home">Home</a>
+                                    <a style={styles.drawerDesign} href="/contact">Contact</a>
+                                    <a style={styles.drawerDesign} href="https://docs.google.com/document/d/1Anz4AYTMIudpU6FfYRQ5N0gsxJqNoCBnEPGCSpcP8Js/edit?usp=sharing" rel="noopener noreferrer" target="_blank">Resume</a>
+                                </Navigation>
+                            </Drawer>
+                            <Content>
+                                <div className="page-content" />
+                            </Content>
+                        </Layout>
+                    </div>
+                </div>
+            )}
+        </Spring>
+      
     )
 }
 

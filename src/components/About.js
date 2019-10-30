@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+//import Projects from "./Projects";
+import { Spring } from "react-spring/renderprops";
 
 
 const styles = {
@@ -26,11 +27,42 @@ const styles = {
 class About extends Component {
     render() {
         return (
-        
-                    <div style={styles.layout} >
-                        <h3 style={styles.banner}>I'm Paris, a problem-solver and programmer.</h3>
+            <Spring
+                from={{opacity:0}}
+                to={{opacity:1}}
+            >
+                {props => (
+                    <div style={props}>
+                        <div style={styles.layout} >
+                            <Spring
+                                from={{opacity: 0}}
+                                to={{opacity:1}}
+                                config={{delay: 1000, duration: 1000}}
+                            >
+                                { props => (
+                                    <div style={props}>
+                                        <h3 style={styles.banner}>Hi, I'm Paris.</h3>
+                                        {/* <Projects /> */}
+                                        <Spring
+                                            from={{opacity:0}}
+                                            to={{opacity:1}}
+                                            config={{delay:2000, duration: 2000}}
+                                        >
+                                            {props => (
+                                                <div style= {props}>
+                                                    <h3 style={styles.banner}> I'm a web developer based in Nashville</h3>
+                                                </div>
+                                            )}
+                                        </Spring>
+                                    </div>
+                                )}
+                            </Spring>
+                        </div>
                     </div>
-         
+                )}
+            </Spring>
+           
+            
         )
     }
 }

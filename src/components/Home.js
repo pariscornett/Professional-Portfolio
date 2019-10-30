@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import avatar from "../assets/myAvatar.png";
-import About from "./About";
+// import About from "./About";
+import { Spring } from 'react-spring/renderprops';
 
 const styles={
     layout: {
@@ -19,35 +20,37 @@ const styles={
         position:"relative",
         paddingTop: "5em",
         borderRadius: 200
-    },
-    social: {
-        display: "flex",
-        justifyContent: "space-between",
-        width: "50%",
-        margin: "auto",
-        fontSize: "5em",
-       
-    }
+    }, 
 }
 
 
 class Home extends Component {
     render() {
         return (
-            <div >
-                <Grid style={styles.design}>
-                    <Cell col={12} style={styles.layout}>
-                        <img 
-                        src= {avatar}
-                        alt="avatar"
-                        style={styles.avatar}
-                        />
-                        
-                    </Cell>
-               
-                </Grid>
-                <About />
-            </div>
+            <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+            >
+                { props => (
+                    <div style={props}>
+                        <div >
+                            <Grid style={styles.design}>
+                                <Cell col={12} style={styles.layout}>
+                                    <img 
+                                    src= {avatar}
+                                    alt="avatar"
+                                    style={styles.avatar}
+                                    />
+                                    
+                                </Cell>
+                            </Grid>
+                            {/* <About /> */}
+                        </div>
+                    </div>
+                )}
+            </Spring>
+
+          
         )
     }
 }
