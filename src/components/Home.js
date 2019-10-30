@@ -20,15 +20,6 @@ const styles={
         paddingTop: "5em",
         borderRadius: 200
     },
-    banner: {
-        position:"relative",
-        top: "100px",
-        color: "#ffffff",
-        width: "75%",
-        margin: "auto",
-        borderRadius: 15,
-        textAlign: "center"
-    },
     social: {
         display: "flex",
         justifyContent: "space-between",
@@ -51,11 +42,11 @@ class Home extends Component {
                         alt="avatar"
                         style={styles.avatar}
                         />
-
-                        <h3 style={styles.banner}>I'm Paris, a problem-solver and programmer.</h3>
+                        
                     </Cell>
-                    <About />
+               
                 </Grid>
+                <About />
             </div>
         )
     }
