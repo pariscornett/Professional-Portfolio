@@ -6,7 +6,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, 
 const styles = {
     layout: {
         position: "relative",
-        top:"100px",
+        top: "-400px",
         width: "100%"
     }
 }

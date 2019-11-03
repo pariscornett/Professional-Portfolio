@@ -17,10 +17,20 @@ const styles = {
         width: "100%",
         textAlign: "center"
     },
-    computer: {
+    btn: {
+        background: "#d46fbb",
+        border:"none",
+        padding: "1rem 2rem",
+        color: "#ffffff",
+        textAlign: "center",
+        fontSize: "20px",
+        textTransform: "uppercase",
         position: "relative",
-        top: "50px",
-        left: "40em"
+        display: "inline", 
+        left: "480px",
+        margin:"15px",
+        width: "15rem",
+        cursor: "pointer"
     }
 }
 
@@ -41,7 +51,7 @@ class About extends Component {
                             >
                                 { props => (
                                     <div style={props}>
-                                        <h3 style={styles.banner}>Hi, I'm Paris.</h3>
+                                        <h3 style={styles.banner}>Hi, I'm Paris...</h3>
                                         {/* <Projects /> */}
                                         <Spring
                                             from={{opacity:0}}
@@ -50,7 +60,8 @@ class About extends Component {
                                         >
                                             {props => (
                                                 <div style= {props}>
-                                                    <h3 style={styles.banner}> I'm a web developer based in Nashville</h3>
+                                                    <h3 style={styles.banner}> ...a web developer based in Nashville</h3>
+                                                    <div style={styles.btn} onClick={this.props.toggleProjects}>Toggle Projects</div>
                                                 </div>
                                             )}
                                         </Spring>
