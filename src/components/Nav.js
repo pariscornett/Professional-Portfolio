@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Header, Navigation, Drawer, Content } from "react-mdl"
+import { Header, Navigation } from "react-mdl"
 import { Spring } from "react-spring/renderprops";
 
 const styles={
@@ -29,6 +29,11 @@ function Nav() {
                     <div className="demo-big-content">
                         <div  style={styles.layout}>
                             <Header title="Paris Cornett Development" style={styles.design} scroll> 
+                                <Navigation>
+                                    <a href="#">Contact</a>
+                                    <a href="#">Resume</a>
+                                    <a href="#">Skills</a>
+                                </Navigation>
                             </Header>
                         </div>
                     </div>
