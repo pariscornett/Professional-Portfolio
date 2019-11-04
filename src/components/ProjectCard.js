@@ -30,16 +30,14 @@ const styles = {
 }
 class ProjectCard extends Component {
     
-    toggleEnter = () => {
+    toggleOver = () => {
         console.log("mouse inside div")
     }
 
-    toggleLeave = () => {
-        console.log("mouse outside div")
-    }
+  
     render() {
         return (
-            <div style={styles.card} onMouseEnter={this.toggleEnter} onMouseLeave={this.toggleLeave}>
+            <div style={styles.card} onMouseOver={this.toggleOver}>
                 <h1>Styls</h1>
                 {/* <button><a href="https://github.com/pariscornett/Styls"  rel="noopener noreferrer" target="_blank">See the Code</a></button>
                 <button><a>See it Live</a></button> */}
