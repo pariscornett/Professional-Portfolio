@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import avatar from "../assets/myAvatar.png";
-// import About from "./About";
 import { Spring } from 'react-spring/renderprops';
 
 const styles={
@@ -44,7 +43,6 @@ class Home extends Component {
                                     
                                 </Cell>
                             </Grid>
-                            {/* <About /> */}
                         </div>
                     </div>
                 )}

@@ -16,22 +16,6 @@ const styles = {
         color: "#ffffff",
         width: "100%",
         textAlign: "center"
-    },
-    btn: {
-        background: "#d46fbb",
-        border:"none",
-        padding: "1rem 2rem",
-        color: "#ffffff",
-        textAlign: "center",
-        fontSize: "20px",
-        textTransform: "uppercase",
-        position: "relative",
-        display: "inline", 
-        top: "50px",
-        left: "480px",
-        margin:"15px",
-        width: "15rem",
-        cursor: "pointer"
     }
 }
 
@@ -62,7 +46,6 @@ class About extends Component {
                                             {props => (
                                                 <div style= {props}>
                                                     <h3 style={styles.banner}> ...I'm a web developer based in Nashville, TN</h3>
-                                                    {/* <div style={styles.btn} onClick={this.props.toggleProjects}>Check out some of my work</div> */}
                                                 </div>
                                             )}
                                         </Spring>

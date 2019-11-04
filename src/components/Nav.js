@@ -9,14 +9,14 @@ const styles={
         //background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",  /* Chrome 10-25, Safari 5.1-6 */
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
         position: "fixed",
-        top: 0
+        top: 0,
     },
     drawerDesign: {
         background: "#ffffff",
         opacity: 0.8,
         color: "#8088d9",
         textAlign: "center",
-        fontSize: "20px"
+        fontSize: "20px",
     }
 }
 function Nav() {
