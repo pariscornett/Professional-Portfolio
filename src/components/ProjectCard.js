@@ -14,13 +14,13 @@ const styles = {
         textAlign: "center",
         color: "#d46fbb",
     },
-    enter: {
+    hover: {
         position: "relative",
         top: -400,
         left: 100,
         height: 300,
         width: 500,
-        background: "black",
+        background: "none",
         opacity: 0.8,
         cursor: "pointer",
         border: "1px solid #d46fbb",
@@ -30,14 +30,19 @@ const styles = {
 }
 class ProjectCard extends Component {
     
-    toggleOver = () => {
-        console.log("mouse inside div")
-    }
+    // toggleEnter = () => {
+    //     const card = document.getElementById('card');
+    //     card.style = styles.hover;
+    // }
 
+    // toggleLeave = () => {
+    //     const card = document.getElementById('card');
+    //     card.style = styles.card;
+    // }
   
     render() {
         return (
-            <div style={styles.card} onMouseOver={this.toggleOver}>
+            <div id="card" style={styles.card} onMouseEnter={this.toggleEnter} onMouseLeave={this.toggleLeave}>
                 <h1>Styls</h1>
                 {/* <button><a href="https://github.com/pariscornett/Styls"  rel="noopener noreferrer" target="_blank">See the Code</a></button>
                 <button><a>See it Live</a></button> */}

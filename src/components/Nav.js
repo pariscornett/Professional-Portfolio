@@ -34,6 +34,7 @@ function Nav() {
                                     <a href="#">Contact</a>
                                     <a href="#">Resume</a>
                                     <a href="#">Skills</a>
+                                    <a href="#">Projects</a>
                                 </Navigation>
                             </Header>
                         </div>

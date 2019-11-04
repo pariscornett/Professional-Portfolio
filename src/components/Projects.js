@@ -8,6 +8,9 @@ const styles = {
         position: "relative",
         top: "-400px",
         width: "100%"
+    },
+    tab: {
+
     }
 }
 
@@ -32,7 +35,7 @@ class Projects extends Component {
                 <div style={{display: "flex"}}>
          
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>Styls</CardTitle>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover'}}>Styls</CardTitle>
                         <CardText>
                             {this.props.activeTab}
                         </CardText>
@@ -50,7 +53,7 @@ class Projects extends Component {
             return(
                 <div style={{display: "flex"}}>
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>That's Trashy</CardTitle>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1508885368104-a4871600f1e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1336&q=80) center / cover'}}>That's Trashy</CardTitle>
                         <CardText>
                             {this.props.activeTab}
                         </CardText>
@@ -68,7 +71,7 @@ class Projects extends Component {
             return(
                 <div style={{display: "flex"}}>
                       <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>Styls</CardTitle>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover'}}>Styls</CardTitle>
                         <CardText>
                             {this.props.activeTab}
                         </CardText>
@@ -86,7 +89,7 @@ class Projects extends Component {
            return(
                 <div style={{display: "flex"}}>
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80) center / cover'}}>Hike It!</CardTitle>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1465393884053-5b522c1d006b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80) center / cover'}}>Hike It!</CardTitle>
                         <CardText>
                             {this.props.activeTab}
                         </CardText>
