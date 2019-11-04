@@ -7,10 +7,18 @@ const styles = {
     layout: {
         position: "relative",
         top: "-400px",
-        width: "100%"
+        width: "100%",
+        height: "600px",
+        background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
     },
-    tab: {
-
+    btn: {
+        color: "#d46fbb"
+    },
+    cardTitle: {
+        display: "inline",
+        position: "relative",
+        marginLeft: "10em",
+        fontWeight: "semi-bold"
     }
 }
 
@@ -35,15 +43,16 @@ class Projects extends Component {
                 <div style={{display: "flex"}}>
          
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover'}}>Styls</CardTitle>
+                        <CardTitle style={{color: 'black', textAlign:'center', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover' }}></CardTitle>
                         <CardText>
                             {this.props.activeTab}
                         </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/pariscornett/Styls"  rel="noopener noreferrer" target="_blank">Github</Button>
-                            <Button colored href="https://styls.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
+                            <Button style={styles.btn} href="https://github.com/pariscornett/Styls"  rel="noopener noreferrer" target="_blank">Github</Button>
+                            <Button style={styles.btn} href="https://styls.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
+                            <div style={styles.cardTitle}>STYLS</div>
                         </CardActions>
-                        <CardMenu style={{color: '#fff'}}>
+                        <CardMenu style={{color: '#d46fbb'}}>
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://styls.herokuapp.com/" />
                         </CardMenu>
                     </Card>  
@@ -53,15 +62,16 @@ class Projects extends Component {
             return(
                 <div style={{display: "flex"}}>
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1508885368104-a4871600f1e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1336&q=80) center / cover'}}>That's Trashy</CardTitle>
+                        <CardTitle style={{color: 'black', height: '176px', background: 'url(https://images.unsplash.com/photo-1508885368104-a4871600f1e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1336&q=80) center / cover'}}></CardTitle>
                         <CardText>
                             {this.props.activeTab}
                         </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/pariscornett/Thats-Trashy" rel="noopener noreferrer" target="_blank">Github</Button>
-                            <Button colored href="https://pariscornett.github.io/Thats-Trashy/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
+                            <Button style={styles.btn} href="https://github.com/pariscornett/Thats-Trashy" rel="noopener noreferrer" target="_blank">Github</Button>
+                            <Button style={styles.btn} href="https://pariscornett.github.io/Thats-Trashy/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
+                            <div style={styles.cardTitle}>THAT'S TRASHY</div>
                         </CardActions>
-                        <CardMenu style={{color: '#fff'}}>
+                        <CardMenu style={{color: '#d46fbb'}}>
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://pariscornett.github.io/Thats-Trashy/" />
                         </CardMenu>
                     </Card>  
@@ -71,15 +81,16 @@ class Projects extends Component {
             return(
                 <div style={{display: "flex"}}>
                       <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover'}}>Styls</CardTitle>
+                        <CardTitle style={{color: 'black', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover'}}></CardTitle>
                         <CardText>
                             {this.props.activeTab}
                         </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/pariscornett/Styls" rel="noopener noreferrer" target="_blank">Github</Button>
-                            <Button colored href="https://styls.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
+                            <Button style={styles.btn} href="https://github.com/pariscornett/Styls" rel="noopener noreferrer" target="_blank">Github</Button>
+                            <Button style={styles.btn} href="https://styls.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
+                            <div style={styles.cardTitle}>STYLS</div>
                         </CardActions>
-                        <CardMenu style={{color: '#fff'}}>
+                        <CardMenu style={{color: '#d46fbb'}}>
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://styls.herokuapp.com/" />
                         </CardMenu>
                     </Card>   
@@ -89,15 +100,16 @@ class Projects extends Component {
            return(
                 <div style={{display: "flex"}}>
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.unsplash.com/photo-1465393884053-5b522c1d006b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80) center / cover'}}>Hike It!</CardTitle>
+                        <CardTitle style={{color: 'black', height: '176px', background: 'url(https://images.unsplash.com/photo-1465393884053-5b522c1d006b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80) center / cover'}}></CardTitle>
                         <CardText>
                             {this.props.activeTab}
                         </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/pariscornett/Hike-It" rel="noopener noreferrer" target="_blank">Github</Button>
-                            <Button colored href="https://shielded-springs-34062.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
+                            <Button style={styles.btn} href="https://github.com/pariscornett/Hike-It" rel="noopener noreferrer" target="_blank">Github</Button>
+                            <Button style={styles.btn} href="https://shielded-springs-34062.herokuapp.com/" rel="noopener noreferrer" target="_blank">Live Demo</Button>
+                            <div style={styles.cardTitle}>HIKE IT!</div>
                         </CardActions>
-                        <CardMenu style={{color: '#fff'}}>
+                        <CardMenu style={{color: '#d46fbb'}}>
                             <IconButton name="share" href="mailto:?subject=I wanted you to see this up and coming developer's website&amp;body=Check out this site https://shielded-springs-34062.herokuapp.com/" />
                         </CardMenu>
                     </Card>  
@@ -111,12 +123,12 @@ class Projects extends Component {
         return (
             <div className="demo-tabs" style={styles.layout}>
                 <Grid>
-                    <Cell col={12}>
+                    <Cell col={6} offset={3}>
                         <Tabs activeTab={this.state.activeTab} onChange={this.handleChange} ripple>
-                            <Tab>React</Tab>
-                            <Tab>JavaScript</Tab>
-                            <Tab>MongoDB</Tab>
-                            <Tab>MySQL</Tab>
+                            <Tab style={{color:"#fff"}}>React</Tab>
+                            <Tab style={{color:"#fff"}}>JavaScript</Tab>
+                            <Tab style={{color:"#fff"}}>MongoDB</Tab>
+                            <Tab style={{color:"#fff"}}>MySQL</Tab>
                         </Tabs>
                         <section>
                             <div className="content">

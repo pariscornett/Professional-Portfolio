@@ -26,20 +26,7 @@ class App extends Component{
         <Router>
         <Nav />
         <Home />
-        <About toggleProjects={this.toggleProjects}/>
-        <Transition
-          renderprops-web
-          items={this.state.showComponentProjects}
-          from={{opacity: 0}}
-          enter={{opacity:1}}
-          leave={{opacity:0}}
-        >
-          {show => show && (props => (
-            <animated.div style={props}>
-              <Projects />
-            </animated.div>
-          ))}
-        </Transition>
+        <About />
         <Projects />
         </Router>
       </div>
