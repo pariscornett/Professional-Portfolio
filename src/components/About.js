@@ -52,7 +52,7 @@ class About extends Component {
                             >
                                 { props => (
                                     <div style={props}>
-                                        <h3 style={styles.banner}>Hi, I'm Paris...</h3>
+                                        <h3 style={styles.banner}>Hi, my name's Paris...</h3>
                                         {/* <Projects /> */}
                                         <Spring
                                             from={{opacity:0}}
@@ -61,8 +61,8 @@ class About extends Component {
                                         >
                                             {props => (
                                                 <div style= {props}>
-                                                    <h3 style={styles.banner}> ...a web developer based in Nashville</h3>
-                                                    <div style={styles.btn} onClick={this.props.toggleProjects}>Toggle Projects</div>
+                                                    <h3 style={styles.banner}> ...I'm a web developer based in Nashville, TN</h3>
+                                                    {/* <div style={styles.btn} onClick={this.props.toggleProjects}>Check out some of my work</div> */}
                                                 </div>
                                             )}
                                         </Spring>

@@ -6,6 +6,7 @@ import Home from "./components/Home";
 //import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import ProjectCard from "./components/ProjectCard/ProjectCard";
 //import Skills from "./components/Skills";
 import "./App.css";
 
@@ -39,6 +40,7 @@ class App extends Component{
             </animated.div>
           ))}
         </Transition>
+        <ProjectCard />
         </Router>
       </div>
     )
