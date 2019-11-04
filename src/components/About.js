@@ -27,6 +27,7 @@ const styles = {
         textTransform: "uppercase",
         position: "relative",
         display: "inline", 
+        top: "50px",
         left: "480px",
         margin:"15px",
         width: "15rem",

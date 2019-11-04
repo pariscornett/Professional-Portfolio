@@ -8,6 +8,7 @@ const styles={
         //background: "#7f7fd5",  /* fallback for old browsers */
         //background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",  /* Chrome 10-25, Safari 5.1-6 */
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
+        position: "fixed",
         top: 0
     },
     drawerDesign: {
@@ -27,7 +28,7 @@ function Nav() {
             {props => (
                 <div style={props}>
                     <div className="demo-big-content">
-                        <div  style={styles.layout}>
+                        <div  style={styles.design}>
                             <Header title="Paris Cornett Development" style={styles.design} scroll> 
                                 <Navigation>
                                     <a href="#">Contact</a>
