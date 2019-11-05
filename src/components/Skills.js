@@ -10,9 +10,9 @@ const styles = {
         top: -375,
         textAlign:"center",
         //background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
-        background: "#fff",
+        background: "#d9d9ed",
         boxShadow: "10px 5px #d46fbb",
-        border: "1px solid #d46fbb",
+        border: "0 1px solid #d46fbb",
         marginLeft: "2em",
         marginRight: "2em"
     },
