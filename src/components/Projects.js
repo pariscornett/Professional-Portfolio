@@ -6,7 +6,7 @@ import { Spring } from 'react-spring/renderprops';
 const styles = {
     layout: {
         position: "relative",
-        top: "-400px",
+        top: "-350px",
         width: "100%",
         height: "600px",
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",

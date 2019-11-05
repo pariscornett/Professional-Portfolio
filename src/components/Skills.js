@@ -1,19 +1,47 @@
 import React from 'react'
+import { Grid, Cell } from "react-mdl";
+import { Spring } from 'react-spring/renderprops';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faJsSquare, faReact, faNode, faHtml5, faCss3Alt, faGit, faNpm} from '@fortawesome/free-brands-svg-icons'
 
+const styles = {
+    layout: {
+        position: "relative",
+        top: -400,
+        textAlign:"center",
+        background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
+    },
+    icons: {
+        display: "inline",
+        margin: "0 30 0 30"
+    }
+}
 function Skills() {
     return (
-        <div>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>MongoDB</li>
-                <li>MySQL</li>
-            </ul>
-        </div>
+        <Spring
+        from={{opacity: 0}}
+        to={{opacity:1}}
+        config={{delay: 3000, duratio: 1000}}
+        >
+            {props => (
+                <div style={props}>
+                    <Grid style={styles.layout}>
+                        <Cell col={12}>
+                            <div >
+                              <FontAwesomeIcon icon={faJsSquare} size="7x" style={styles.icons} />
+                              <FontAwesomeIcon icon={faReact} size="7x"style={styles.icons} />
+                              <FontAwesomeIcon icon={faNode} size="7x" style={styles.icons} />
+                              <FontAwesomeIcon icon={faHtml5} size="7x" style={styles.icons} />
+                              <FontAwesomeIcon icon={faCss3Alt} size="7x" style={styles.icons} />
+                              <FontAwesomeIcon icon={faGit} size="7x" style={styles.icons} />
+                              <FontAwesomeIcon icon={faNpm} size="7x" style={styles.icons} />
+                            </div>
+                        </Cell>
+                    </Grid>
+                </div>
+            )}
+        </Spring>
+     
     )
 }
 
