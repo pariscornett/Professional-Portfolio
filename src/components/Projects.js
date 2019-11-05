@@ -50,13 +50,14 @@ class Projects extends Component {
         const {activeTab} = this.state;
         if(activeTab===0) {
             return(
+                <div>
                 <Spring
                     from={{ opacity: 0 }}
                     to={{ opacity: 1 }}
                 >
                    {props => (
                        <div style={props}>
-                            <div style={{display: "flex"}}>   
+                            <div style={{display: "flex"}}>
                                 <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
                                     <CardTitle style={{color: 'black', textAlign:'center', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover' }}></CardTitle>
                                     <CardText>
@@ -75,6 +76,7 @@ class Projects extends Component {
                        </div>
                    )}
               </Spring>
+              </div>
             )
         } else if(activeTab===1) {
             return(

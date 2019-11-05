@@ -1,14 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Transition, animated } from "react-spring/renderprops";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 //import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import About from "./components/About";
-//import ProjectCard from "./components/ProjectCard";
 import Skills from "./components/Skills";
-import "./App.css";
+
 
 
 

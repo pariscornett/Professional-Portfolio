@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-//import Projects from "./Projects";
 import { Spring } from "react-spring/renderprops";
 
 

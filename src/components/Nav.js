@@ -10,6 +10,7 @@ const styles={
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
         position: "fixed",
         top: 0,
+        zIndex: "5"
     },
     drawerDesign: {
         background: "#ffffff",
