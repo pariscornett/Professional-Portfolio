@@ -6,7 +6,7 @@ import { Spring } from 'react-spring/renderprops';
 const styles = {
     layout: {
         position: "relative",
-        top: "-350px",
+        top: -250,
         width: "100%",
         height: "600px",
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
@@ -58,7 +58,7 @@ class Projects extends Component {
                    {props => (
                        <div style={props}>
                             <div style={{display: "flex"}}>
-                                <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+                                <Card shadow={10} style={{width: '512px', margin: 'auto'}}>
                                     <CardTitle style={{color: 'black', textAlign:'center', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover' }}></CardTitle>
                                     <CardText>
                                         {this.props.activeTab}
@@ -87,7 +87,7 @@ class Projects extends Component {
                {props => (
                    <div style={props}>
                         <div style={{display: "flex"}}>
-                            <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+                            <Card shadow={10} style={{width: '512px', margin: 'auto'}}>
                                 <CardTitle style={{color: 'black', height: '176px', background: 'url(https://images.unsplash.com/photo-1508885368104-a4871600f1e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1336&q=80) center / cover'}}></CardTitle>
                                 <CardText>
                                     {this.props.activeTab}
@@ -116,7 +116,7 @@ class Projects extends Component {
                {props => (
                    <div style={props}>
                         <div style={{display: "flex"}}>
-                            <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+                            <Card shadow={10} style={{width: '512px', margin: 'auto'}}>
                                 <CardTitle style={{color: 'black', height: '176px', background: 'url(https://images.unsplash.com/photo-1558361716-f8144bad90f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center / cover'}}></CardTitle>
                                 <CardText>
                                     {this.props.activeTab}
@@ -145,7 +145,7 @@ class Projects extends Component {
             {props => (
                 <div style={props}>
                     <div style={{display: "flex"}}>
-                        <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+                        <Card shadow={10} style={{width: '512px', margin: 'auto'}}>
                             <CardTitle style={{color: 'black', height: '176px', background: 'url(https://images.unsplash.com/photo-1465393884053-5b522c1d006b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80) center / cover'}}></CardTitle>
                             <CardText>
                                 {this.props.activeTab}

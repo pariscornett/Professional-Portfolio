@@ -7,12 +7,14 @@ import { faJsSquare, faReact, faNode, faHtml5, faCss3Alt, faGit, faNpm} from '@f
 const styles = {
     layout: {
         position: "relative",
-        top: -400,
+        top: -375,
         textAlign:"center",
         //background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
         background: "#fff",
-        opacity: "0.5",
-        boxShadow: "10px 5px #d46fbb"
+        boxShadow: "10px 5px #d46fbb",
+        border: "1px solid #d46fbb",
+        marginLeft: "2em",
+        marginRight: "2em"
     },
     icons: {
         display: "inline",
