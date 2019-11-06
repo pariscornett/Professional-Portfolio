@@ -3,9 +3,6 @@ import { Footer, FooterSection } from "react-mdl";
 
 const styles = {
     design: {
-        position: "fixed",
-        width: "100%",
-        top: "600px",
         //background: "#7f7fd5",
         //background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
         background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
