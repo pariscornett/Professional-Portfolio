@@ -31,12 +31,12 @@ function Nav() {
                     <div className="demo-big-content">
                         <div  style={styles.design}>
                             <Header title="Paris Cornett Development" style={styles.design} scroll> 
-                                <Navigation>
-                                    <a href="#">Contact</a>
-                                    <a href="#">Resume</a>
-                                    <a href="#">Skills</a>
-                                    <a href="#">Projects</a>
-                                </Navigation>
+                                {/* <Navigation>
+                                    <div>Contact</div>
+                                    <div>Resume</div>
+                                    <div>Skills</div>
+                                    <div>Projects</div>
+                                </Navigation> */}
                             </Header>
                         </div>
                     </div>
