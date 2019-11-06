@@ -14,7 +14,8 @@ const styles = {
         position: "relative",
         top: -300,
         textAlign: "center",
-        color: "black"
+        color: "black",
+        fontFamily: 'Raleway sans-serif',
     },
     desc: {
         position:"relative",
@@ -26,7 +27,8 @@ const styles = {
         marginLeft: "10em",
         marginRight: "10em",
         padding: 20,
-        zIndex: -1
+        zIndex: -1,
+        fontFamily: 'Montserrat sans-serif',
     },
     icons: {
         position:"relative",
@@ -35,7 +37,8 @@ const styles = {
         display: "inline",
         marginLeft: "1em",
         marginRight: "1em",
-        justifyContent: "center"
+        justifyContent: "center",
+        color: "#ffffff"
     }
 }
 

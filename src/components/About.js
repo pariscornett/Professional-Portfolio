@@ -14,7 +14,8 @@ const styles = {
         position:"relative",
         color: "#ffffff",
         width: "100%",
-        textAlign: "center"
+        textAlign: "center",
+        fontFamily: 'Raleway sans-serif',
     }
 }
 
@@ -35,7 +36,7 @@ class About extends Component {
                             >
                                 { props => (
                                     <div style={props}>
-                                        <h3 style={styles.banner}>Hi, my name's Paris...</h3>
+                                        <h2 style={styles.banner}>Hi, my name's Paris...</h2>
                                         {/* <Projects /> */}
                                         <Spring
                                             from={{opacity:0}}
@@ -44,7 +45,7 @@ class About extends Component {
                                         >
                                             {props => (
                                                 <div style= {props}>
-                                                    <h3 style={styles.banner}> ...I'm a web developer based in Nashville, TN</h3>
+                                                    <h2 style={styles.banner}> ...I'm a web developer based in Nashville, TN</h2>
                                                 </div>
                                             )}
                                         </Spring>

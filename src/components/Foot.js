@@ -5,8 +5,11 @@ const styles = {
     design: {
         //background: "#7f7fd5",
         //background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
-        background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
-        padding: "5em" 
+        background: "none",
+        padding: "5em",
+        position: "relative",
+        left: 550,
+        fontFamily: 'Montserrat sans-serif',
     }
 }
 
@@ -14,7 +17,7 @@ function Foot() {
     return (
         <div>
         <Footer size="mini" style={styles.design}>
-            <FooterSection type="middle" logo="Copyright &copy; 2019 | Paris Cornett">
+            <FooterSection logo="Copyright &copy; 2019 | Paris Cornett">
             </FooterSection>
         </Footer>
         </div>

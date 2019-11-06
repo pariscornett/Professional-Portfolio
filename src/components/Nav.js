@@ -7,10 +7,12 @@ const styles={
         //background: "#77A1D3",  /* fallback for old browsers */
         //background: "#7f7fd5",  /* fallback for old browsers */
         //background: "-webkit-linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",  /* Chrome 10-25, Safari 5.1-6 */
-        background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
+        background: "none",
         position: "fixed",
         top: 0,
-        zIndex: "5"
+        zIndex: "5",
+        fontFamily: 'Montserrat sans-serif',
+        fontSize: 25,
     },
     drawerDesign: {
         background: "#ffffff",
@@ -30,7 +32,8 @@ function Nav() {
                 <div style={props}>
                     <div className="demo-big-content">
                         <div  style={styles.design}>
-                            <Header title="Paris Cornett Development" style={styles.design} scroll> 
+                            <Header  style={styles.design} scroll> 
+                                Paris Cornett Development
                                 {/* <Navigation>
                                     <div>Contact</div>
                                     <div>Resume</div>
