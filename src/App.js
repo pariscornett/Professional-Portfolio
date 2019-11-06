@@ -10,7 +10,10 @@ import Foot from "./components/Foot";
 
 const container = {
   background: "linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4)",
-  marginBottom: 0
+  width: "100%",
+  margin: 0,
+  padding: 0,
+  overflowX: "hidden"
 }
 
 
