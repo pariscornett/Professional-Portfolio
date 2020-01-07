@@ -183,7 +183,7 @@ class Projects extends Component {
                                 <Cell col={6} offset={3}>
                                     <Tabs activeTab={this.state.activeTab} onChange={this.handleChange} ripple>
                                         <Tab style={{color:"#fff"}}>React</Tab>
-                                        <Tab style={{color:"#fff"}}>JavaScript</Tab>
+                                        <Tab style={{color:"#fff"}}>jQuery</Tab>
                                         <Tab style={{color:"#fff"}}>MongoDB</Tab>
                                         <Tab style={{color:"#fff"}}>MySQL</Tab>
                                     </Tabs>
